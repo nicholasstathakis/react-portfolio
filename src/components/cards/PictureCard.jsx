@@ -20,7 +20,13 @@ const PictureCard = (
                     draggable={false}
                 />
                 <CardContent>
-                    <Stack direction="row" spacing={1} alignItems="center" style={{width:'100%', marginBottom:'7px'}}>
+                    <Stack
+                        direction={{ xs: 'column', sm: 'row' }}
+                        spacing={{ xs: 1, sm: 2, md: 4 }} 
+                        // direction="row" 
+                        // spacing={1} 
+                        alignItems="center" 
+                        style={{width:'100%', marginBottom:'7px'}}>
                         {skills.map((skill, idx) => {
                             return skillToChip(skill, idx)
                         })}
