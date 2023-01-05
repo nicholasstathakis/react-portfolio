@@ -18,5 +18,5 @@ export const skillToChip = (skill, idx) => {
     });
 
     console.log(key)
-    return <Chip label={key} style={{backgroundColor:skill}} key={idx}/>
+    return <Chip label={key} style={{backgroundColor:skill, cursor:'pointer'}} key={idx}/>
 }

@@ -26,6 +26,7 @@ function App() {
 
         <CustomDivider title={"Work Experience"} />
         <Box
+          className='list-item'
           sx={{
             display: 'flex',
             justifyContent: 'space-around',
@@ -49,6 +50,7 @@ function App() {
         <CustomDivider title={"Hobbies"} />
 
         <Box
+          className='list-item'
           sx={{
             display: 'flex',
             justifyContent: 'space-around',

@@ -10,41 +10,43 @@ const PictureCard = (
     { title, blurb, fullDescription, image, moreInfoLink, skills }
 ) => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-                <CardMedia
-                    component="img"
-                    height="140"
-                    image={image}
-                    alt="company logo"
-                    draggable={false}
-                />
-                <CardContent>
-                    <Stack
-                        direction={{ xs: 'column', sm: 'row' }}
-                        spacing={{ xs: 1, sm: 2, md: 4 }} 
-                        // direction="row" 
-                        // spacing={1} 
-                        alignItems="center" 
-                        style={{width:'100%', marginBottom:'7px'}}>
-                        {skills.map((skill, idx) => {
-                            return skillToChip(skill, idx)
-                        })}
-                    </Stack>
-                    <Typography gutterBottom variant="h5" component="div">
-                        {title}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        {blurb}
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
-            <CardActions>
-                <Button size="small" color="primary" href={moreInfoLink} target={"_blank"}>
-                    Website
-                </Button>
-            </CardActions>
-        </Card>
+        <div className='individual-item'>
+            <Card sx={{ maxWidth: 345 }}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={image}
+                        alt="company logo"
+                        draggable={false}
+                    />
+                    <CardContent>
+                        <Stack
+                            direction={{ xs: 'row', sm: 'row' }}
+                            spacing={{ xs: 1, sm: 2, md: 2 }}
+                            // direction="row" 
+                            // spacing={1} 
+                            alignItems="center"
+                            style={{ width: '100%', marginBottom: '7px' }}>
+                            {skills.map((skill, idx) => {
+                                return skillToChip(skill, idx)
+                            })}
+                        </Stack>
+                        <Typography gutterBottom variant="h5" component="div">
+                            {title}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            {blurb}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button size="small" color="primary" href={moreInfoLink} target={"_blank"}>
+                        Website
+                    </Button>
+                </CardActions>
+            </Card>
+        </div>
     );
 }
 

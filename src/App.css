@@ -1,0 +1,22 @@
+.individual-item {
+    float: left;
+    width: 300px;
+    height: auto;
+    transition: transform 0.2s;
+    margin: 10px;
+}
+
+.list-item {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.list-item:hover .individual-item:hover {
+    z-index: 2;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
