@@ -1,5 +1,5 @@
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
-import ColourTabs from "./ColourTabs";
+import FullWidthTab from "./FullWidthTab";
 
 export default function Navbar() {
     return (
@@ -14,10 +14,10 @@ export default function Navbar() {
                     >
                         Nicholas Stathakis
                     </Typography>
-                    <Box sx={{width: { xs: '100vw', sm: 'auto' }}}>
-                        <ColourTabs />
-
+                    <Box sx={{ width: { xs: '100vw', sm: 'auto' } }}>
+                        <FullWidthTab />
                     </Box>
+                    
 
                 </Toolbar>
             </AppBar>
