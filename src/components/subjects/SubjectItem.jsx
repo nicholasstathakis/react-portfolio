@@ -11,7 +11,7 @@ const SubjectItem = ({
 
     const formattedDescription = `${description} [${termTaken}]`
     return (
-        <ListItem>
+        <ListItem divider sx={{width:'100%'}}>
             <MarkCircle mark={mark} />
             <ListItemText primary={courseName} secondary={formattedDescription} />
         </ListItem>
