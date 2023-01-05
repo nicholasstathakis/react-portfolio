@@ -2,7 +2,7 @@ import * as React from 'react';
 import List from '@mui/material/List';
 import SubjectItem from './SubjectItem';
 import { Languages } from '../../enum/Languages';
-import { Badge, Button, Collapse, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import { Button, Collapse, ListItemText } from '@mui/material';
 import { ExpandLess, ExpandMore } from '@mui/icons-material';
 
 // [{'code':'COMP1511', 'description':'Programming Fundamentals', 'mark':90, 'languages':[Languages.C] }]
@@ -16,18 +16,41 @@ export default function SubjectList({
     setOpen(!open);
   };
 
-  const lst = [
-    { 'code': 'COMP2511', 'description': 'Object Oriented Programming', 'mark': 100, 'languages': [Languages.C], 'term': '22T3' },
-    { 'code': 'COMP1511', 'description': 'Programming Fundamentals', 'mark': 89, 'languages': [Languages.C], 'term': '21T1' },
-    { 'code': 'COMP6080', 'description': 'Front End Web Development', 'mark': 93, 'languages': [Languages.C], 'term': '22T3' },
+  const lstUnsorted = [
+    { 'code': 'COMP1511', 'description': 'Programming Fundamentals', 'mark': 84, 'languages': [Languages.C], 'term': '21T1' },
+    { 'code': 'MATH1081', 'description': 'Discrete Mathematics', 'mark': 85, 'languages': [], 'term': '21T1' },
+    { 'code': 'MATH1131', 'description': 'Mathematics 1A', 'mark': 84, 'languages': [], 'term': '21T1' },
+
+    { 'code': 'COMP1521', 'description': 'Computer Systems Fundamentals', 'mark': 90, 'languages': [Languages.C], 'term': '21T2' },
+    { 'code': 'COMP2521', 'description': 'Data Structures and Algorithms', 'mark': 97, 'languages': [Languages.C], 'term': '21T2' },
+    { 'code': 'MATH1231', 'description': 'Mathematics 1B', 'mark': 85, 'languages': [], 'term': '21T1' },
+
+    { 'code': 'COMP1531', 'description': 'Software Engineering Fundamentals', 'mark': 91, 'languages': [Languages.Python], 'term': '21T3' },
+    { 'code': 'COMP3331', 'description': 'Computer Networks & Applications', 'mark': 82, 'languages': [Languages.Java], 'term': '21T3' },
+
+    { 'code': 'COMP3231', 'description': 'Operating Systems', 'mark': 94, 'languages': [Languages.C], 'term': '22T1' },
+    { 'code': 'COMP3411', 'description': 'Artificial Intelligence', 'mark': 88, 'languages': [Languages.Prolog], 'term': '22T1' },
+
+    { 'code': 'COMP3121', 'description': 'Algorithms & Programming Techniques', 'mark': 96, 'languages': [], 'term': '22T2' },
+    { 'code': 'COMP9517', 'description': 'Computer Vision', 'mark': 98, 'languages': [Languages.Python], 'term': '22T2' },
+
+    { 'code': 'COMP2511', 'description': 'Object Oriented Design and Programming', 'mark': 100, 'languages': [Languages.Java], 'term': '22T3' },
+    { 'code': 'COMP6080', 'description': 'Web Front-End Programming', 'mark': 93, 'languages': [Languages.React], 'term': '22T3' },
   ]
+
+  const lstSorted = lstUnsorted.sort(({mark:a}, {mark:b}) => b-a);
+
 
   const first = []
   const last = []
 
-  first.push(lst[0])
-  last.push(lst[1])
-  last.push(lst[2])
+  for (let i = 0; i < 5; i++) {
+    first.push(lstSorted[i])
+  }
+
+  for (let i = 5; i < lstSorted.length; i++) {
+    last.push(lstSorted[i])
+  }
 
   return (
     <List sx={{ width: '100%', bgcolor: 'background.paper' }}>

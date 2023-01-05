@@ -4,6 +4,8 @@ export const Languages = {
 	C: "#4CAF50",
 	Java: "#1E88E5",
 	Python: "#EF5350", 
+    Prolog: "#ce93d8",
+    React: "#81c784"
 }
 
 export const languageToChip = (language, idx) => {
