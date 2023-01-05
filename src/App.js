@@ -10,7 +10,7 @@ import { Skills } from './enum/Skills';
 
 import forcite from './static/forcite.jpg'
 import passiona from './static/passiona.jpg'
-import SubjectList from './components/SubjectList';
+import SubjectList from './components/subjects/SubjectList';
 
 const darkTheme = createTheme({
   palette: {
