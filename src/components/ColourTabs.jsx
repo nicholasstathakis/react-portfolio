@@ -4,7 +4,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 
 export default function ColourTabs() {
-  const [value, setValue] = React.useState('one');
+  const [value, setValue] = React.useState('work');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -21,9 +21,10 @@ export default function ColourTabs() {
         textColor="secondary"
         indicatorColor="secondary"
       >
-        <Tab value="one" label="Item One" />
-        <Tab value="two" label="Item Two" />
-        <Tab value="three" label="Item Three" />
+        <Tab value="work" label="Work" />
+        <Tab value="school" label="School" />
+        <Tab value="hobbies" label="Hobbies" />
+        <Tab value="music" label="Music" />
       </Tabs>
     </Box>
   );

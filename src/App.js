@@ -54,6 +54,9 @@ function App() {
 
         </Box>
 
+        <CustomDivider title={"Academics"} />
+
+
 
         <CustomDivider title={"Hobbies"} />
 
@@ -73,6 +76,10 @@ function App() {
             title={"The Squeeze"}
             image={passiona} />
         </Box>
+
+
+        <CustomDivider title={"Music"} />
+
       </div>
     </ThemeProvider >
   );
