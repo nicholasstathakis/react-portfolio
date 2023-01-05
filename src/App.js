@@ -6,10 +6,11 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box } from '@mui/material';
 import CustomDivider from './components/CustomDivider';
-import { Skills } from './Skills';
+import { Skills } from './enum/Skills';
 
 import forcite from './static/forcite.jpg'
 import passiona from './static/passiona.jpg'
+import SubjectList from './components/SubjectList';
 
 const darkTheme = createTheme({
   palette: {
@@ -56,6 +57,7 @@ function App() {
 
         <CustomDivider title={"Academics"} />
 
+        <SubjectList />
 
 
         <CustomDivider title={"Hobbies"} />

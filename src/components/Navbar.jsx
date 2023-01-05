@@ -12,7 +12,7 @@ export default function Navbar() {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        Nicholas Stathakis - Portfolio
+                        Nicholas Stathakis
                     </Typography>
                     <Box sx={{width: { xs: '100vw', sm: 'auto' }}}>
                         <ColourTabs />

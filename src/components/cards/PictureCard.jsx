@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Stack } from '@mui/material';
-import { skillToChip } from '../../Skills';
+import { skillToChip } from '../../enum/Skills';
 
 const PictureCard = (
     { title, blurb, fullDescription, image, moreInfoLink, skills }
