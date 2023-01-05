@@ -44,6 +44,14 @@ function App() {
             moreInfoLink={"https://www.forcitehelmets.com"}
             skills={[Skills.Android, Skills.Kotlin, Skills.Architecture]} />
 
+          <PictureCard
+            title={"Forcite"}
+            blurb={"The worlds first mass-produced Smart Helmet which promotes rider safety."}
+            image={forcite}
+            fullDescription={"I am some full description. I should be humungous."}
+            moreInfoLink={"https://www.forcitehelmets.com"}
+            skills={[Skills.Android, Skills.Kotlin, Skills.Architecture]} />
+
         </Box>
 
 
