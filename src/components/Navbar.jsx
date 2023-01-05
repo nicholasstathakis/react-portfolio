@@ -4,7 +4,7 @@ import ColourTabs from "./ColourTabs";
 export default function Navbar() {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Toolbar>
                     <Typography
                         variant="h6"
@@ -21,6 +21,8 @@ export default function Navbar() {
 
                 </Toolbar>
             </AppBar>
+
+            <Toolbar />
         </Box>
     );
 }
