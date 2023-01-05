@@ -18,6 +18,8 @@ const MarkCircle = ({ mark }) => {
             display: 'flex',
             justifyContent: 'center', 
             alignItems: 'center',
+            minHeight: '60px', 
+            minWidth: '60px', 
             height: '60px', 
             width: '60px', 
             borderRadius: '30px', 

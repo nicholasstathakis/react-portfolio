@@ -19,5 +19,5 @@ export const languageToChip = (language, idx) => {
     });
 
     console.log(key)
-    return <Chip label={key} style={{backgroundColor:language}} key={idx}/>
+    return <Chip label={key} style={{width:'100px', backgroundColor:language}} key={idx}/>
 }
