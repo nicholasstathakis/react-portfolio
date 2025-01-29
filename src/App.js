@@ -8,6 +8,7 @@ import { Box } from '@mui/material';
 import CustomDivider from './components/CustomDivider';
 import { Skills } from './enum/Skills';
 
+import abc from './static/abc.png'
 import forcite from './static/forcite.jpg'
 import passiona from './static/passiona.jpg'
 import SubjectList from './components/subjects/SubjectList';
@@ -30,7 +31,7 @@ function App() {
           className='list-item'
           sx={{
             display: 'flex',
-            justifyContent: 'space-around',
+            justifyContent: 'center',
             p: 1,
             m: 1,
             bgcolor: 'background.paper',
@@ -38,13 +39,20 @@ function App() {
           }}
         >
           <PictureCard
+            title={"ABC"}
+            blurb={"Australia's most trusted source for news and information."}
+            image={abc}
+            fullDescription={"I am some full description. I should be humungous."}
+            moreInfoLink={"https://www.abc.net.au"}
+            skills={[Skills.Android, Skills.Kotlin, Skills.Compose]} />
+
+          <PictureCard
             title={"Forcite"}
             blurb={"The worlds first mass-produced Smart Helmet which promotes rider safety."}
             image={forcite}
             fullDescription={"I am some full description. I should be humungous."}
             moreInfoLink={"https://www.forcitehelmets.com"}
             skills={[Skills.Android, Skills.Kotlin, Skills.Architecture]} />
-
         </Box>
 
         <CustomDivider title={"Academics"} />

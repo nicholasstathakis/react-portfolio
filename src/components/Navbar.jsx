@@ -11,7 +11,7 @@ export default function Navbar() {
                         noWrap
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-                    >
+                    >   
                         Nicholas Stathakis
                     </Typography>
                     <Box sx={{ width: { xs: '100vw', sm: 'auto' } }}>

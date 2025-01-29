@@ -4,7 +4,8 @@ export const Skills = {
 	Android: "#4CAF50",
 	Kotlin: "#1E88E5",
 	Architecture: "#EF5350",
-	Game_Development: "#FBC02D" 
+	Game_Development: "#FBC02D",
+    Compose: "#714fb0",
 }
 
 export const skillToChip = (skill, idx) => {
