@@ -16,9 +16,11 @@ const SubjectItem = ({
             <MarkCircle mark={mark} />
             <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <ListItemText primary={courseName} secondary={formattedDescription} />
-                {languages.map((lang, idx) => {
-                    return languageToChip(lang, idx)
-                })}
+                <div style={{display:'flex', flexDirection: 'row', gap: '10px'}}>
+                    {languages.map((lang, idx) => {
+                        return languageToChip(lang, idx)
+                    })}
+                </div>
             </div>
 
         </ListItem>

@@ -36,10 +36,24 @@ export default function SubjectList({
 
     { 'code': 'COMP2511', 'description': 'Object Oriented Design and Programming', 'mark': 100, 'languages': [Languages.Java], 'term': '22T3' },
     { 'code': 'COMP6080', 'description': 'Web Front-End Programming', 'mark': 93, 'languages': [Languages.React], 'term': '22T3' },
+
+    { 'code': 'COMP3131', 'description': 'Programming Languages and Compilers', 'mark': 93, 'languages': [Languages.Java], 'term': '23T1' },
+    { 'code': 'COMP3311', 'description': 'Database Systems', 'mark': 99, 'languages': [Languages.Python, Languages.SQL], 'term': '23T1' },
+
+    { 'code': 'COMP2041', 'description': 'Software Construction: Techniques and Tools', 'mark': 96, 'languages': [Languages.Python, Languages.Shell], 'term': '23T2' },
+    { 'code': 'COMP9312', 'description': 'Data Analytics for Graphs', 'mark': 90, 'languages': [Languages.Python], 'term': '23T2' },
+
+    { 'code': 'COMP4336', 'description': 'Mobile Data Networking', 'mark': 89, 'languages': [Languages.Java], 'term': '23T3' },
+    { 'code': 'COMP4920', 'description': 'Professional Issues and Ethics in Information', 'mark': 81, 'languages': [], 'term': '23T3' },
+
+    { 'code': 'COMP9321', 'description': 'Data Services Engineering', 'mark': 97, 'languages': [Languages.Python], 'term': '24T1' },
+    { 'code': 'PHYS1160', 'description': 'Introduction to Astronomy', 'mark': 90, 'languages': [], 'term': '24T1' },
+
+    { 'code': 'COMP3900', 'description': 'Computer Science Project', 'mark': 83, 'languages': [Languages.Python, Languages.React], 'term': '24T2' },
+    { 'code': 'SCIF1004', 'description': 'Science and the Cinema', 'mark': 97, 'languages': [], 'term': '24T2' },
   ]
 
   const lstSorted = lstUnsorted.sort(({mark:a}, {mark:b}) => b-a);
-
 
   const first = []
   const last = []
