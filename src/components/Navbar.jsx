@@ -1,5 +1,4 @@
-import { AppBar, Box, Toolbar, Typography } from "@mui/material";
-import FullWidthTab from "./FullWidthTab";
+import { AppBar, Box, Toolbar, Typography, Link } from "@mui/material";
 
 export default function Navbar() {
     return (
@@ -14,15 +13,16 @@ export default function Navbar() {
                     >   
                         Nicholas Stathakis
                     </Typography>
-                    <Box sx={{ width: { xs: '100vw', sm: 'auto' } }}>
-                        <FullWidthTab />
-                    </Box>
-                    
-
+                    <Link
+                        variant="h6"
+                        href="mailto:nicholas.stathakis1@gmail.com"
+                        align="end"
+                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+                    >   
+                        nicholas.stathakis1@gmail.com
+                    </Link>
                 </Toolbar>
             </AppBar>
-
-            <Toolbar />
         </Box>
     );
 }

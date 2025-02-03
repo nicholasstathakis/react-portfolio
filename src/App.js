@@ -23,7 +23,7 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <div className="App">
+      <div className="App" style={{display: "flex", flexDirection: "column"}}>
         <Navbar />
 
         <CustomDivider title={"Work Experience"} />
